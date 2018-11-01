@@ -1,0 +1,570 @@
+*{margin: 0; padding: 0;}
+/*a{text-decoration: none; color:#808080;}*//*去除A标签自带的下滑线*/
+li{list-style: none;}/*去除点*/
+img{border: none;}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	/*width: 1200px;*/
+	/*margin: auto;*/
+	/*background: #cccccc;*/
+	/*font-family: "微软雅黑";*/
+	font-family: "宋体";
+}
+/*清除浮动*/
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+/*头部*/
+.heads{
+	width: 100%;
+	height: 118px;
+	
+}
+/*详情栏*/
+#Details{
+	width: 1200px;
+	height: 860px;
+	/*background: red;*/
+	margin: auto;
+	position: relative;
+}
+/*<!--当前位置-->*/
+#Details_place{
+	width: 1200px;
+	height: 65px;
+	/*background: yellow;*/
+	
+}
+/*缩略图*/
+.thumbnail{
+	width: 115px;
+	height: 795px;
+	/*background: tan;*/
+	float: left;
+}
+.topimg{
+	transform: rotateZ(90deg);
+	margin-left: 40px;
+	margin-top: 45px;
+	cursor: pointer;
+}
+.buttonimg{
+	transform: rotateZ(90deg);
+	margin-left: 40px;
+	cursor: pointer;
+	
+}
+.img{
+	width: 115px;
+	height: 511px;
+	/*background: blueviolet;*/
+	margin: auto;
+	overflow: hidden;
+}
+.imgbox{
+	width: 70px;
+	height: 790px;
+	/*background: darkorange;*/
+	margin: auto;
+}
+.imgbox img{
+	width: 70px;
+	height: 95px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+/*详图*/
+.detail{
+	width: 525px;
+	height: 710px;
+	float: left;
+	margin-left: 20px;
+	/*background: firebrick;*/
+	position: relative;
+}
+.detail img{
+	width: 525px;
+	height: 710px;
+	float: left;
+}
+.minbox{
+	width: 250px;
+	height: 360px;
+	background: black;
+	opacity: 0.5;
+	cursor: pointer;
+	position: absolute;
+	display: none;
+	
+}
+/*放大镜图片*/
+.enlarge{
+	width: 525px;
+	height: 710px;
+	position: absolute;
+	/*background: red;*/
+	left: 672px;
+	top: 64px;
+	overflow: hidden;
+	display: none;
+	z-index: 999;
+}
+.enlarge img{
+	width: 1102px;
+	height: 1400px;
+	
+}
+
+
+/*详情*/
+.details{
+	width: 525px;
+	height: 795px;
+	float: left;
+	/*background: blue;*/
+	margin-left: 15px;
+}
+/*商品名称*/
+
+.SianZan{
+	width: 41px;
+	height: 19px;
+	border: 1px solid blue;
+	text-align: center;
+	line-height: 20px;
+	
+}
+.name{
+	width: 525px;
+	height: 65px;
+	/*background: darkorange;*/
+	font-size: 16px;
+	line-height: 43px;
+}
+/*价格*/
+.price{
+	width: 525px;
+	height: 78px;
+	background: #f7f7f7;
+	position: relative;
+}
+.price .pricel{
+	width: 65px;
+	height: 20px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+	
+	font-size: 17px;
+	color: red;
+}
+.price .pricer{
+	width: 100px;
+	height: 20px;
+	float: left;
+	text-align: center;
+	
+}
+.price .pricer s{
+	color: #888888;
+	margin-left: 20px;
+}
+.price .discounts{
+	width: 65px;
+	height: 19px;
+	border: 1px solid blue;
+	position: absolute;
+	margin-top: 36px;
+	margin-left: 12px;
+	font-size: 13px;
+	text-align: center;
+	color: blue;
+	
+}
+.price .member{
+	width: 420px;
+	height: 20px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 93px;
+}
+.price .member .subtract{
+	color: blue;
+}
+/*颜色*/
+.colour{
+	width: 525px;
+	height: 95px;
+	/*background: crimson;*/
+	position: relative;
+	
+}
+.colour .circle{
+	width: 55px;
+	height: 55px;
+	border-radius:50%;
+	border: 1px solid black;
+	cursor: pointer;
+	position: absolute;
+	top: 13px;
+	left: 2px;
+}
+.colour h1{
+	width: 25px;
+	height: 25px;
+	border-radius:50%;
+	background: #000000;
+	cursor: pointer;
+	position: absolute;
+	top: 28px;
+	left: 18px;
+}
+.colour p{
+	width: 55px;
+	height: 95px;
+	line-height: 165px;
+	margin-left: 15px;
+	
+}
+/*码数*/
+.yardage{
+	width: 525px;
+	height: 56px;
+	position: relative;
+}
+.circle{
+	width: 54px;
+	height: 54px;
+	border-radius:50%;
+	border: 1px solid rgba(0,0,0,0);
+	cursor: pointer;
+	float: left;
+	margin-right: 15px;
+	text-align: center;
+	line-height: 50px;
+	color: #b8b0b0;
+}
+.size{
+	width: 525px;
+	height: 30px;
+	/*background: yellow;*/
+}
+.size div{
+	width: 210px;
+	height: 30px;
+	float: left;
+	/*background: blue;*/
+	line-height: 30px;
+}
+.size div:nth-of-type(2){
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	float: right;
+	border-bottom: 1px dashed #E3E4E5;
+	cursor: pointer;
+}
+/*尺码对照表*/
+.maxeh{
+	width: 100%;
+	height: 1000px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	margin-top: -977px;
+	display: none;
+}
+.maxeh .maxeh_box{
+	width: 900px;
+	height: 500px;
+	margin: auto;
+	position: fixed;
+	
+	left: 235px;
+	top: 100px;
+}
+.maxeh .maxeh_box img{
+	width: 900px;
+	height: 500px;
+	
+}
+
+/*加入购物车*/
+.shopping{
+	width: 525px;
+	height: 43px;
+	/*background: violet;*/
+}
+.shopping .join{
+	width: 255px;
+	height: 43px;
+	background: #000000;
+	float: left;
+	color: white;
+	text-align: center;
+	line-height: 43px;
+	cursor: pointer;
+	
+}
+.shopping .join:hover{
+	transition: all 1s;
+	opacity: 0.5;
+}
+.shopping .wish{
+	width: 255px;
+	height: 41px;
+	border: 1px solid #e5e5e5;
+	float: right;
+	/*background: white;*/
+	text-align: center;
+	line-height: 43px;
+	cursor: pointer;
+}
+.shopping .wish:hover{
+	transition: all 1s;
+	background: #e5e5e5;
+}
+.shopping .wish:nth-of-type(3){
+	border-top: none;
+	/*background: white;*/
+	display: none;
+}
+.wish .wish_img{
+	width: 25px;
+	height: 27px;
+	float: right;
+	transform: rotateZ(270deg);
+	margin-top: 7px;
+	margin-right: 15px;
+}
+.wish .wish_img img{
+	width: 26px;
+	height: 26px;
+}
+
+/*购买须知*/
+.purchase{
+	width: 525px;
+	height: 250px;
+	margin-top: 35px;
+	
+}
+.notice{
+	width: 525px;
+	height: 40px;
+	border-bottom:1px solid #E5E5E5 ;
+	cursor: pointer;
+}
+.notice .remain{
+	margin-left: 10px;
+}
+.notice span{
+	line-height: 40px;
+}
+
+.notice .direction{
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-top:11px;
+	margin-right: 15px;
+	overflow: hidden;
+	
+}
+.notice .direction img{
+	margin-top: -61px;
+	/*-43*/
+}
+.notice .direction .imgs{margin-top: -43px;}
+/*隐藏须知*/
+.conceal{
+	width: 525px;
+	max-height: 180px;
+	display: none;
+	color: #5E5E5E;
+}
+
+/*图文详情*/
+.image{
+	width: 1200px;
+	height: 50px;
+	margin: auto;
+	/*background: red;*/
+	border-bottom:1px solid #E5E5E5 ;
+	line-height: 50px;
+	cursor: pointer;
+}
+.hide_details{
+	width: 1200px;
+	max-height: 10000px;
+	/*background: yellow;*/
+	margin: auto;
+	display: none;
+	font-size: 50px;
+}
+.ddimg{
+	width: 800px;
+	min-height: 1000px;
+	margin: auto;
+}
+.ddimg img{
+	width: 800px;
+	height: 1000px;
+	margin: auto;
+}
+/*告知书*/
+.notification{
+	width: 960px;
+	height: 390px;
+	margin: auto;
+}
+.hide_details b{
+	font-size: 12px;
+}
+/*内容*/
+.hide_details .substance{
+	
+}
+.image .direction{
+	width: 20px;
+	height: 20px;
+	float: right;
+	margin-top:18px;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.image .direction img{
+	margin-top: -16px;
+	/*-43*/
+}
+.image .direction .imgs{
+	transform: rotate(180deg);
+	margin-top: -51px;
+}
+
+/*猜你喜欢*/
+.Guess{
+	width: 1200px;
+	height: 500px;
+	/*background: yellow;*/
+	margin:20px auto 50px;
+	border-top: 1px solid #E5E5E5;
+}
+.Guessyon{
+	width: 1200px;
+	height: 85px;
+	/*background: tomato;*/
+}
+.Guessyon ul{
+	width: 187px;
+	height: 85px;
+	/*background: blueviolet;*/
+	margin: auto;
+}
+.Guessyon ul li{
+	width: 93px;
+	height: 24px;
+	/*background: turquoise;*/
+	float: left;
+	list-style: none;
+	text-align: center;
+	margin-top: 30px;
+	
+}
+.Guessyon ul li:nth-of-type(2){
+	border-left:1px solid #E5E5E5;
+
+}
+
+/*滚动图*/
+/*可视图片框*/
+.Guess_box{
+	width: 1100px;
+	height: 350px;
+	margin: auto;
+	overflow: hidden;
+	/*background: red;*/
+	position: relative;
+	
+	
+}
+/*向左按扭*/
+.Guess_box .Guess_left{
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	margin-top: 131px;
+	cursor: pointer;
+}
+/*向右按扭*/
+.Guess_box .Guess_rigth{
+	width: 30px;
+	height: 60px;
+	position: absolute;
+	margin-left: 1062px;
+	margin-top: -194px;
+	cursor: pointer;
+	
+}
+
+
+/*图片长框*/
+.Guess_box .imgboxs{
+	width: 2400px;
+	height: 350px;
+	/*background: brown;*/
+}
+/*单个图片框*/
+.imgboxs .Guess_img{
+	width: 190px;
+	height: 350px;
+	/*background: darkorange;*/
+	float: left;
+	padding-left:42px ;
+	padding-right: 42px;
+}
+
+.Guess_box .Guess_img .img{
+	width: 190px;
+	height: 253px;
+	
+}
+.Guess_img img{
+	width: 190px;
+	height: 253px;
+}
+.Guess_img .name{
+	width: 190px;
+	height: 97px;
+	/*background: darkolivegreen;*/
+}
+.Guess_img .name p{
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+.Guess_img .name p:nth-of-type(2){
+	margin-top: -10px;
+	color: red;
+}
+.Guess_left{
+	float: left;
+}
+
+/*//尾部*/
+#stern{
+	width: 100%;
+	height: 460px;
+}
+
+
+

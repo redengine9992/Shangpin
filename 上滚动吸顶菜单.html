@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 1200px;
+				height: 510px;
+				background: yellow;
+				margin: auto;
+			}
+			#ww{
+				background: red;
+				
+			}
+			ul{
+				width: 500px;
+				height: 80px;
+				margin-left: 350px;
+			}
+			#uls>li{
+				float: left;
+				width: 100px;
+				height: 80px;
+				background: blue;
+				text-align: center;
+				line-height: 80px;
+			}
+			.krad{
+				position: fixed;
+				top: 0;
+				z-index: 1;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div >
+			<ul id="uls">
+				<li>菜单一</li>
+				<li>菜单二</li>
+				<li>菜单三</li>
+				<li>菜单四</li>
+			</ul>
+		</div>
+		
+		
+		<div id="ww">
+		</div>
+		
+		<div >
+		</div>
+		
+		<div id="ww">
+		</div>
+		<div>
+		</div>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+		$(document).ready(function(){
+			
+			var p=0;t=0;
+			$(window).scroll(function(e){
+				p = $(this).scrollTop();
+				if(t<=p){
+					console.log("向下滚动")
+					$("#uls").slideUp()
+				}else{
+					console.log("向上滚动")
+					$("#uls").slideDown().css({"position":"fixed","top":"0"});
+				}
+				t=p;
+			})
+			
+		})
+			
+			
+		
+		
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

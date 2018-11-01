@@ -1,0 +1,335 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; /*color:#808080;*/}/*去除A标签自带的下滑线*/
+li{list-style: none;}/*去除点*/
+img{border: none;}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	/*width: 1200px;*/
+	/*margin: auto;*/
+	/*background: #cccccc;*/
+	/*font-family: "微软雅黑";*/
+	font-family: "宋体";
+}
+/*清除浮动*/
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+		/*注册头部*/
+#register_head{
+	height: 80px;
+	background: #f6f6f6;
+}
+#register_head>#register{
+	width: 960px;
+	height: 80px;
+	background: #f6f6f6;
+	margin: auto;
+	position: relative;
+}
+#register_head>#register>a>img{
+	width: 212px;
+	height: 24px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -106px;
+	margin-top: -12px;
+}
+			/*注册领礼包*/
+#hint{
+	width: 270px;
+	height: 29px;
+	background: #e5e5e5;
+	margin: auto;
+}
+/*#hint>#marked{
+	width: 960px;
+	height: 24px;
+	background: yellow;
+	margin: auto;
+}*/
+#hint>#marked>p{
+	text-align: center;
+	line-height: 29px;
+	font-size: 16px;
+}
+
+		/*登录*/
+		/*登录页左边*/
+#regi{
+	width: 960px;
+	height: 720px;
+	background: white;
+	margin: auto;
+}
+#regi>#regi_left{
+	width: 589px;
+	height: 690px;
+	float: left;
+	/*background: yellow;*/
+	
+}
+#regi>#regi_left>ul{
+	width:410px;
+	height: 50px;
+	/*background: red;*/
+	margin: auto;
+	padding-top: 22px;
+}
+#regi>#regi_left>ul>li{
+	width:205px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	margin: auto;
+}
+
+/*账号输入框*/	
+#regi>#regi_left>.inpud_box{
+	width:412px;
+	height: 75px;
+	/*background: skyblue;*/
+	margin: auto;
+}
+#regi>#regi_left>.inpud_box>input{
+	width:410px;
+	height: 45px;
+	font-size: 14px;
+	border: 1px solid #000000;
+	float: left;
+}
+#regi>#regi_left>.inpud_box:nth-of-type(1){
+	margin-top: 22px;
+}
+#regi>#regi_left>.inpud_box>.note{
+	width:123px;
+	height: 45px;
+	float: right;
+	/*background: yellow;*/
+}
+#regi>#regi_left>.inpud_box>.note>#img{
+	margin-top: 11px;
+}
+#regi>#regi_left>.inpud_box>.note>.aa{
+	margin-top: -26px;
+	margin-left: 82px;
+	font-size: 13px;
+	
+}
+#regi>#regi_left>.inpud_box>.note>.span{
+	width:123px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	border: 1px solid blue;
+	color: blue;
+	cursor: pointer;
+}
+#regi>#regi_left>.inpud_box>.ghgh{
+	width: 410px;
+	height: 19px;
+	/*background: red;*/
+	margin-top: 32px;
+	display: none;
+}
+
+
+
+
+#regi>#regi_left>.inpud_box>span{
+	line-height: 28px;
+	color: blue;
+	display: none;
+}
+/*验证码输入框*/
+#regi>#regi_left>.code>input{
+	width:258px;
+	height: 45px;
+}
+
+
+/*登录按扭框*/
+#regi>#regi_left>.ster{
+	width:410px;
+	height: 80px;
+	margin: auto;
+	margin-top: 75px;
+}
+/*#regi>#regi_left>.ster>a{
+	float: right;
+}*/
+#regi>#regi_left>.ster>.button{
+	width:410px;
+	height: 49px;
+	font-size: 18px;
+	color: white;
+	background: #e5e5e5;
+	border: none;
+	margin-top: 15px;
+	
+}
+
+
+
+
+
+
+
+
+		/*登录页右边*/
+		
+/*<!--登录页右边--上-->*/
+		
+#regi>#regi_right{
+	width: 370px;
+	height: 690px;
+	float: left;
+	/*background: tan;*/
+}	
+#regi>#regi_right>#box{
+	width: 370px;
+	height: 440px;
+	margin-top: 100px;
+	border-left: 1px solid  #e5e5e5;
+}		
+#regi>#regi_right>#box>#regi_up{
+	width: 305px;
+	height: 100px;
+	/*background: yellow;*/
+	margin: auto;
+	border-bottom: 1px dashed #000000; /*dashed 虚线*/
+}
+#regi>#regi_right>#box>#regi_up>p{
+	margin-left: 94px;
+	margin-top: 5px;
+	font-size: 14px;
+	
+}
+#regi_right>#box>#regi_up>div{
+	width: 120px;
+	height: 25px;
+	
+	position: relative;
+	margin-left: 106px;
+	margin-top: 20px;
+	font-size: 17px;
+	
+}
+#regi>#regi_right>#box>#regi_up>div>#img{
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 4px;
+}
+/*<!--登录页右边--中-->*/
+#regi>#regi_right>#box>#regi_centre{
+	width: 305px;
+	height: 170px;
+	/*background: yellow;*/
+	margin: auto;
+}
+#regi>#regi_right>#box>#regi_centre>p{
+	padding-top:26px ;
+	margin-left: 83px;
+	font-size: 14px;
+}
+#regi>#regi_right>#box>#regi_centre>ul{
+	width: 220px;
+	height: 51px;
+	/*background: red;*/
+	margin:30px auto;
+}
+#regi>#regi_right>#box>#regi_centre>ul>li{
+	width: 52px;
+	height: 51px;
+	float: left;
+	/*background: blue;*/
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+/*<!--登录页右边--下-->*/
+#regi>#regi_right>#box>#regi_below{
+	width: 135px;
+	height: 160px;
+	margin: auto;
+	
+}
+#regi>#regi_right>#box>#regi_below>p{
+	font-size: 13px;
+	text-align: center;
+}
+
+			/*关于尚品*/
+#regards{
+	width: 960px;
+	height: 45px;
+	background: #333333;
+	margin:10px auto 0;
+}
+#regards>ul{
+	width: 960px;
+	height: 45px;
+}
+#regards>ul>li{
+	width: 106.66px;
+	height: 45px;
+	float: left;	
+	text-align: center;
+	line-height: 45px;
+	color: white;
+	font-size: 12px;
+	
+}
+
+		/*<!--尾部-->*/
+#offal_gh{
+	width: 960px;
+	height: 116px;
+	margin: auto;
+	background: white;
+}
+
+#offal_gh>#fooal_character{
+	width: 873px;
+	height:30px;
+	/*background: tan;*/
+	margin: auto;
+	text-align: center;
+	line-height: 30px;
+	padding-top: 30px;
+	font-size: 12px;
+}
+#offal_gh>.fooal_img{
+	width: 520px;
+	height: 30px;
+	/*background: blue;*/
+	margin: auto;
+	margin-top: 11px;
+}
+#offal_gh>.fooal_img>li{
+	width: 520px;
+	height: 30px;
+	/*background: blue;*/
+}
+#offal_gh>.fooal_img>li>img{
+	width: 76px;
+	height:22px;
+	float: left;
+	margin-left: 10px;
+}
+
+
+

@@ -1,0 +1,129 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color:#808080;}/*去除A标签自带的下滑线*/
+li{list-style: none;}/*去除点*/
+img{border: none;}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	/*width: 1200px;*/
+	/*margin: auto;*/
+	/*background: #cccccc;*/
+	/*font-family: "微软雅黑";*/
+	font-family: "宋体";
+}
+/*清除浮动*/
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*尾部*/
+#offal{
+	height: 80px;
+	background: black;
+}
+#offal>#offal_mw{
+	width: 1200px;
+	height: 80px;
+	background: black;
+	margin: auto;
+}
+#offal>#offal_mw>img{
+	width: 1200px;
+	height: 80px;
+}
+#offal_offal{
+	width: 1200px;
+	height: 235px;
+	margin: auto;
+}
+#offal_offal>ul{
+	width: 300px;
+	height: 235px;
+	float: left;
+	/*background: blue;*/
+	margin-top: 20px;
+}
+#offal_offal>ul>li{
+	width: 300px;
+	height: 26px;
+	/*background: tan;*/
+	text-align: center;
+	line-height: 26px;
+}
+
+#offal_gh{
+	width: 1200px;
+	height: 155px;
+	margin: auto;
+}
+#offal_gh>ul{
+	width: 632px;
+	height: 30px;
+	/*background: yellow;*/
+	margin: auto;
+}
+#offal_gh>ul>li{
+	width: 85px;
+	height: 30px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+#offal_gh>#fooal_character{
+	width: 873px;
+	height:60px;
+	/*background: tan;*/
+	margin: auto;
+	text-align: center;
+	line-height: 30px;
+}
+#offal_gh>.fooal_img{
+	width: 510px;
+	height: 30px;
+	/*background: blue;*/
+}
+#offal_gh>.fooal_img>li{
+	width: 510px;
+	height: 30px;
+	/*background: blue;*/
+}
+#offal_gh>.fooal_img>li>img{
+	width: 72px;
+	height:22px;
+	float: left;
+	margin-left: 10px;
+}
+#offal_offal>ul>.wb{
+	width: 140px;
+	height:180px;
+	position: relative;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+/*微信微博二维码*/
+#offal_offal>ul>.wb>.wxflt{
+	position: absolute;
+	display: none;
+}
+#offal_offal>ul>.wb>.wbflt{
+	position: absolute;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+

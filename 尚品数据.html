@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+		$.ajax({
+			type:"get",
+//			url:"http://www.shangpin.com/HomePage/AjaxHomeRecommendProduct?channelId=1",
+//			url:"",
+			url:"http://js11.shangpin.com/ResourceHandler.ashx?f=~/shangpin/widget/home/home/css&v=20181011082837",
+			dataType:"jsonp",
+		}).done(function(sre){
+			console.log(sre)
+			alert(1)
+		});
+		
+		{baidu: "https://cm.pos.baidu.com/pixel?dspid=21259316&aid=18",…}
+baidu: "https://cm.pos.baidu.com/pixel?dspid=21259316&aid=18"
+guangdiantong: "https://cm.e.qq.com/cm.fcg?gdt_dspid=3853490&dsp_checksum=37884&gdt_dsp_timestamp=1419503821"
+kuantong: "https://cm.qtmojo.com/pixel?allyes_dspid=422&_ssl=1&allyes_cm&extra=aa"
+lingji: "https://cc.xtgreat.com/cm.gif?dspid=11253"
+sohu: "https://t.go.sohu.com/cm.gif?ver=1&mid=10091&uid=HUAYUAN_ID"
+tanx: "https://cms.tanx.com/t.gif?tanx_nid=116665968&tanx_cm&aid=18"
+vamaker: "https://cm.vamaker.com/pixel?vamaker_dspid=11270143&vamaker_cm"
+		
+		callback0({success: true,…})
+result: [{originalPrice: "118.00", skuId: "pop8008711247", basePrice: "118.00", minPrice: "118.00"},…]
+0: {originalPrice: "118.00", skuId: "pop8008711247", basePrice: "118.00", minPrice: "118.00"}
+basePrice: "118.00"
+minPrice: "118.00"
+originalPrice: "118.00"
+skuId: "pop8008711247"
+1: {originalPrice: "119.00", skuId: "pop8009822126", basePrice: "119.00", minPrice: "95.00"}
+basePrice: "119.00"
+minPrice: "95.00"
+originalPrice: "119.00"
+skuId: "pop8009822126"
+success: true
+
+callback0({"success": true, "result": [{"originalPrice":"118.00","skuId":"pop8008711247","basePrice":"118.00","minPrice":"118.00"},{"originalPrice":"119.00","skuId":"pop8009822126","basePrice":"119.00","minPrice":"95.00"}]})
+	</script>
+</html>

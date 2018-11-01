@@ -1,0 +1,254 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color:#808080;}/*去除A标签自带的下滑线*/
+li{list-style: none;}/*去除点*/
+img{border: none;}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	/*width: 1200px;*/
+	/*margin: auto;*/
+	/*background: #cccccc;*/
+	/*font-family: "微软雅黑";*/
+	font-family: "宋体";
+}
+/*清除浮动*/
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+/*<!--TOPSHOP 2件7折 3件5折-->*/
+#actibity{
+	width: 1200px;
+	height: 110px;
+	/*background: yellow;*/
+	margin: auto;
+}
+#actibity>#break{
+	width: 1200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	cursor: pointer;
+}
+#actibity>ul{
+	width: 1200px;
+	height: 30px;
+}
+#actibity>ul>li{
+	width: 80px;
+	height: 30px;
+	margin: auto;
+	text-align: center;
+	line-height: 30px;
+	border: 1.5px solid blue;
+	color: blue;
+	cursor: pointer;
+	
+}
+
+/*全部*/
+#complete{
+	width: 1200px;
+	height: 40px;
+	/*background: blue;*/
+	margin: auto;
+}
+#complete>span{
+	line-height: 40px;
+	float: left;
+}
+#complete>#uls{
+	width: 155px;
+	height: 40px;
+	float: left;
+	/*background: red;*/
+	margin-left: 175px;
+	
+}
+#complete>#uls>ul>.dot{
+	width: 15px;
+	height: 15px;
+	/*background: white;*/
+	border-radius:50% ;
+	margin-top: 12.5px;
+}
+#complete>#uls>ul>li{
+	width: 32px;
+	height: 40px;
+	float: left;
+	/*background: brown;*/
+	margin-left: 2px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+#complete>#ranking{
+	width: 315px;
+	height: 40px;
+	/*background: tomato;*/
+	float: right;
+	line-height: 40px;
+}
+#complete>#ranking>span>a{
+	cursor: pointer;
+}
+hr{
+	width: 1200px;
+	margin: auto;
+}
+/*商品内容****************************************/
+#mwpwwgbb{
+	width: 1200px;
+	min-height: 0000px;
+	/*background: blue;*/
+	margin:15px auto;
+}
+#mwpwwgbb>.mwpwwgbb_left{
+	width: 200px;
+	min-height: 2000px;
+	/*background: skyblue;*/
+	float: left;
+}
+
+#mwpwwgbb>.mwpwwgbb_left>.broad_heading{
+	width: 200px;
+	height: 30px;
+	/*background: darkgoldenrod;*/
+	line-height: 30px;
+	border-bottom: 1px solid #2F4F4F;
+}
+#mwpwwgbb>.mwpwwgbb_left>.subclass{
+	max-height:200px;
+	overflow-y: auto;
+}
+
+#mwpwwgbb>.mwpwwgbb_left>.subclass>ul>li{
+	float: left;
+	cursor: pointer;
+}
+
+/*分类小圆点*/
+#mwpwwgbb>.mwpwwgbb_left>.subclass>ul>.dot{
+	width: 10px;
+	height: 10px;
+	background: white;
+	border-radius: 50%;
+	margin-top: 5px;
+	margin-right:15px;
+	border: 1px solid silver;
+	
+}
+/*右边商品示图*/
+.mwpwwgbb_right{
+	width: 1000px;
+	min-height: 100px;
+	/*background: forestgreen;*/
+	float: left;
+	
+}
+#mwpwwgbb>.mwpwwgbb_right>.pictorial{
+	width: 1000px;
+	height: 435px;
+	/*background: chartreuse;*/
+}
+.pictorial>.thumbnail{
+	width: 235px;
+	height: 435px;
+	/*background: cornflowerblue;*/
+	float: left;
+	margin-left: 15px;
+}
+.pictorial>.thumbnail>.imgbox{
+	width: 235px;
+	height: 320px;
+	/*background: red;*/
+	position: relative;
+}
+.thumbnail>.imgbox>.img1,.thumbnail>.imgbox>.img2{
+	width: 235px;
+	height: 320px;
+	position: absolute;
+}
+.thumbnail>.imgbox .img1>img,.thumbnail>.imgbox .img2>img{
+	width: 235px;
+	height: 320px;
+	position: absolute;
+	cursor: pointer;
+}
+.pictorial>.thumbnail>.tetbox{
+	width: 235px;
+	height: 110px;
+	/*background: darkmagenta;*/
+	padding: 5px 0 0;
+}
+
+.pictorial>.thumbnail>.tetbox>p{
+	width: 235px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	cursor: pointer;
+}
+.pictorial>.thumbnail>.tetbox>.sold{
+	width: 50px;
+	height: 25px;
+	margin: auto;
+	border: 1px solid blue;
+	box-sizing: border-box;/*加边框不向外挤*/
+	/*margin-top: 5px;*/
+	cursor: pointer;
+	
+}
+.pictorial>.thumbnail>.tetbox>h4{
+	width: 235px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 20px;
+	cursor: pointer;
+	
+}
+.pictorial>.thumbnail>.tetbox>hr{
+	width: 100%;
+	margin-top: 18px;
+}
+
+
+.pictorial>.thumbnail>.tetbox>p{
+	width: 235px;
+	height: 25px;
+	line-height: 25px;
+	white-space: nowrap;/*超出内容不换行*/
+	overflow: hidden;/*超出隐藏*/
+	text-overflow: ellipsis;/*超出内容省略号替代*/
+	/*text-align: center;*/
+	cursor: pointer;
+	
+}
+.pictorial>.thumbnail>.tetbox>.price{
+	width: 110px;
+	height: 25px;
+	text-align: center;
+	background: white;
+	line-height: 25px;
+	margin-left: 60px;
+	margin-top: -14px;
+	cursor: pointer;
+	
+}
+
+/*尾部*/
+#rump{
+	width: 100%;
+	height: 460px;
+}

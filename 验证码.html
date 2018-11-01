@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#code{
+				width: 60px;
+				height: 40px;
+				background: skyblue;
+				border: 1px solid green;
+				line-height: 40px;
+				text-align: center;
+				cursor: pointer;
+			}
+			#code,input,span{
+				float: left;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<input type="text" name="myText" id="myText" value="" />
+		<div id="code">ghjk</div>
+		<span></span>
+		<br />
+		<div style="clear: both;"></div>
+		<button id="btn">判断</button>
+	</body>
+	<script type="text/javascript">
+		//验证码---防止服务器瘫痪
+		
+			
+		window.onload=function(){
+			var codes="";
+		//函数---生成验证码--生成四位验证码
+		function makeCode(){
+			//清空
+			codes="";
+			var arr=["1","2","3","a","b","c","A","B","C"];
+			
+//			每次选择出4个组成验证码
+			for(var i=0;i<4;i++){
+				var index=parseInt(Math.random()*arr.length);
+				//验证码+=
+				codes+=arr[index];
+			}
+			return codes;
+			
+		}
+		
+//		1.页面加载完成 调用验证码函数---显示验证码
+			var box=document.getElementById("code");
+			box.innerHTML=makeCode();
+		
+		
+//		2.给验证码绑定点击事件  ----点击从新生成验证码
+		box.onclick=function(){
+			this.innerHTML=makeCode();
+		}
+
+//      3.输入验证码 --点击判断
+			var btn=document.getElementById("btn");
+			//输入框
+			var inputs=document.getElementById("myText");
+			var spans=document.getElementsByTagName("span")[0];
+			btn.onclick=function(){
+				var inputval=inputs.value;
+	//			假如为空 提示不能为空
+				if(inputval==""){
+					alert("请输入验证码");
+					
+				}else{//否则 
+					
+					//	假如正确 显示√ 颜色绿色  清空输入框
+						if(inputval.toLocaleLowerCase()==codes.toLocaleLowerCase()){
+							spans.innerHTML="√";
+							spans.style.color="greenyellow";
+							document.getElementById("myText").value="";
+							//输入正确 --更换验证码
+							box.innerHTML=makeCode();
+						}else{
+								//	否则	   显示×   颜色红色  
+							spans.innerHTML="×";
+							spans.style.color="red";	
+						}
+				}	
+			}
+
+
+
+	
+		
+		
+		
+}		
+		
+		
+	</script>
+</html>

@@ -1,0 +1,386 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color:#808080;}/*去除A标签自带的下滑线*/
+li{list-style: none;}/*去除点*/
+img{border: none;}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	/*width: 1200px;*/
+	/*margin: auto;*/
+	/*background: #cccccc;*/
+	font-family: "宋体";
+}
+/*清除浮动*/
+.clear::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+/*<!--头部-->*/
+.heads{
+	width: 100%;
+	height: 118px;
+	
+}
+		/*<!--主页大图轮播-->*/
+.homepage{
+	width: 1200px;
+	height: 755px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+.homepage>.slideshow{
+	width: 5000px;
+	height: 755px;
+	/*background: yellow;*/
+	overflow: hidden;
+	transition: all 0.2s;
+	
+}
+.homepage>.slideshow>img{
+	width: 1200px;
+	height: 755px;
+	float: left;
+	transition: all 0.2s;
+}
+.homepage .slideshow img:hover{
+	transform: scale(1.2);
+	transition: all 0.2s;
+}
+.homepage>ul{
+	width: 180px;
+	height: 20px;
+	/*background: yellowgreen;*/
+	position: absolute;
+	bottom: 4px;
+	left: 50%;
+	margin-left: -90px;
+	
+}
+.homepage>ul>li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: blue;
+	margin-left: 8px;
+	list-style: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.homepage>span{
+	font-size: 120px;
+	cursor: pointer;
+	
+}
+.homepage>.left{
+	position: absolute;
+	left: 0px;
+	top:275px;
+}
+.homepage>.right{
+	position: absolute;
+	right: 0px;
+	top: 275px;
+}
+/*商品列表<!--二分之一-->*/
+.list{
+	width: 1200px;
+	height: 850px;
+	/*background: yellow;*/
+	margin:30px auto;
+}
+.list>.picture_frame{
+	width: 585px;
+	height: 850px;
+	float: left;
+	/*background: blueviolet;*/
+}
+.list>.picture_frame>.commodity{
+	width: 585px;
+	height: 800px;
+	/*background: blue;*/
+	overflow: hidden;
+}
+.list>.picture_frame>.commodity>img{
+	width: 585px;
+	height: 800px;
+	transition: all 0.2s;
+}
+.list>.picture_frame>.commodity>img:hover{
+	transform: scale(1.1);
+	transition: all 0.2s;
+}
+.list>.picture_frame:nth-of-type(2){
+	margin-left: 30px;
+}
+.list>.picture_frame>.namest{
+	width: 585px;
+	height: 25px;
+	text-align: center;
+	/*line-height: 25px;*/
+}
+/*<!--一比二-->*/
+.listss{
+	width: 1200px;
+	height: 540px;
+	/*background: yellow;*/
+	margin:30px auto;
+	
+}
+.listss>.picture_dd{
+	width: 806px;
+	height: 540px;
+	float: left;
+	/*background: fuchsia;*/
+}
+.listss>.picture_dd>.dd{
+	width: 806px;
+	height: 488px;
+	overflow: hidden;
+}
+.listss>.picture_dd>.dd>img{
+	width: 806px;
+	height: 488px;
+	transition: all 0.2s;
+}
+.listss>.picture_dd>.dd>img:hover{
+	transform: scale(1.1);
+	transition: all 0.2s;
+}
+.listss>.picture_dd>.namest{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+}
+.listss>.picture_ih{
+	width: 364px;
+	height: 540px;
+	float: left;
+	/*background: darkcyan;*/
+	margin-left: 30px;
+}
+.listss>.picture_ih>.ih{
+	width: 364px;
+	height: 488px;
+	overflow: hidden;
+	
+}
+.listss>.picture_ih>.ih>img{
+	width: 364px;
+	height: 488px;
+	transition: all 0.2s; 
+}.listss>.picture_ih>.ih>img:hover{
+	transform: scale(1.1);
+	transition: all 0.2s;
+}
+.listss>.picture_ih>.namest{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+}
+.listss>.ww{
+	margin-left: 0px;
+	margin-right: 30px;
+}
+/*商品1比1比1*/
+.tripleton{
+	width: 1200px;
+	height: 565px;
+	/*background: tan;*/
+	margin: auto;
+}
+.tripleton>.triple_thr{
+	width: 380px;
+	height: 565px;
+	float: left;
+	margin-left: 30px;
+	/*background: red;*/
+}
+.tripleton>.triple_thr>.three{
+	width: 380px;
+	height: 508px;
+	overflow: hidden;
+}
+.tripleton>.triple_thr:nth-of-type(1){
+	margin-left: 0px;
+}
+.tripleton>.triple_thr>.three>img{
+	width: 380px;
+	height: 508px;
+	transition: all 0.2s; 
+}
+.tripleton>.triple_thr>.three>img:hover{
+	transform: scale(1.1);
+	transition: all 0.2s;
+}
+.tripleton>.triple_thr>.namest{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+}
+/*<!--商品二分之一-->*/
+.heym{
+	height: 415px;
+}
+.heym .picture_frame{
+	height: 415px;
+}
+.heym .picture_frame .commodity{
+	height: 365px;
+}
+.heym .picture_frame .commodity>img{
+	height: 365px;
+}
+/*查看更多*/
+.examine{
+	width: 1200px;
+	height: 25px;
+	margin: auto;
+}
+.examine>span{
+	float: right;
+	cursor: pointer;
+	
+}
+/*猜你喜欢*/
+
+#like{
+	width: 120px;
+	height: 25px;
+	margin: auto;
+	background: #FFFFFF;
+	text-align: center;
+	line-height: 25px;
+	margin-top: -15px;
+
+}
+#frame{
+	width: 1200px;
+	height: 325px;
+	margin-top: 20px;
+	margin: auto;
+	/*background: yellow;*/
+	overflow: hidden;
+	position: relative;
+}
+
+#long_frame{
+	width: 6120px;
+	height: 325px;
+	margin: auto;
+	/*background: blue;*/
+	position: relative;
+}
+.left_direction{
+	width: 30px;
+	height: 40px;
+	/*background: red;*/
+	position: absolute;
+	margin-top: 130px;
+	overflow: hidden;
+	z-index: 999;
+}
+.left_direction .lection{
+	margin-left: -15px;
+	margin-top: -50px;
+	cursor: pointer;
+}
+.right_direction{
+	width: 30px;
+	height: 40px;
+	/*background: red;*/
+	position: absolute;
+	margin-left: 1170px;
+	margin-top:-195px;
+	overflow: hidden;
+	z-index: 1;
+	
+}
+.right_direction .direc{
+	margin-left: -124px;
+	margin-top: -50px;
+	cursor: pointer;
+}
+#frame>#long_frame>.map{
+	width: 216px;
+	height: 325px;
+	float: left;
+	margin-left: 30px;
+	/*background: teal;*/
+	
+	
+}
+#frame>#long_frame>.map>img{
+	width: 190px;
+	height: 250px;
+	margin-left: 13px;
+}
+#frame>#long_frame>.map>.namest{
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	
+}
+#frame>#long_frame>.map>.red{
+	color: red;
+}
+#frame>#long_frame>.map:nth-of-type(1){
+	margin-left: 0px;
+}
+/*侧边栏*/
+.sidebar{
+	width: 30px;
+	height: 216px;
+	/*background: yellow;*/
+	position: fixed;
+	right: 0;
+	bottom: 180px;
+	z-index: 9999;
+}
+.sidebar ul{
+	width: 30px;
+	height: 216px;
+	border-top:1px solid #5E5E5E ;
+}
+.sidebar ul li{
+	width: 30px;
+	height: 50px;
+	border-bottom:1px solid #5E5E5E ;
+	cursor: pointer;
+	
+}
+.sidebar ul li span{
+	width: 30px;
+	height: 50px;
+	font-size: 15px;
+	text-align: center;
+	/*line-height: 10px;*/
+}
+.sidebar .app{
+	position: fixed;
+	right: 30px;
+	bottom: 114px;
+	
+	/*display: none;*/
+}
+.sidebar .app:nth-of-type(1){
+	position: fixed;
+	right: 30px;
+	bottom: 165px;
+	display: none;
+}
+/*//尾部*/
+#stern{
+	width: 100%;
+	height: 460px;
+}
+
+
